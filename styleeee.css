@@ -90,7 +90,13 @@ html{
     z-index: -1;
     opacity:0.89;
 }
+#home h1:hover{
+    
+    box-shadow: 0 0 10px #ffffff,0 0 40px #ffffff , 0 0 10px #ffffff,0 0 40px #ffffff;
+    color: white;
+    text-shadow: 2px 2px 8px white;
 
+}
 #home h1{
     color:white;
     text-align: center;

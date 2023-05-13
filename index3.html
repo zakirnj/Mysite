@@ -3,18 +3,16 @@
 
 <head>
     <script>
-           
-        function f1()
-        {
-var x=document.myForm.Email.value;
-if((x.indexOf(x.length-4)!=".") && (x.indexOf(x.length-3)!=".")&&(x.indexOf('@')<=0))
-{
-document.getElementById("massage").innerHTML="invalid";
-return false;
 
-}
-         }
-               </script>
+        function f1() {
+            var x = document.myForm.Email.value;
+            if ((x.indexOf(x.length - 4) != ".") && (x.indexOf(x.length - 3) != ".") && (x.indexOf('@') <= 0)) {
+                document.getElementById("massage").innerHTML = "invalid";
+                return false;
+
+            }
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -40,7 +38,7 @@ return false;
     <section id="home">
         <h1 class="h-primary">Welcome to NjFurniture</h1>
         <p>deels in all kinds of furnitures </p>
-        
+
         <li class="btn"><a href="order.html">Order Now</a></li>
     </section>
 
@@ -50,14 +48,16 @@ return false;
             <div class="box">
                 <img src="img/pexels-curtis-adams-4682110.jpg" alt="">
                 <h2 class="h-secondary center">Furniture Catering</h2>
-                <p class="center">we have create all types of furnitures like chair,table,bed,weardroom,kitchen,boxing,etc</p>
+                <p class="center">we have create all types of furnitures like
+                    chair,table,bed,weardroom,kitchen,boxing,etc</p>
             </div>
-            
+
             <div class="box">
                 <img src="img/3.png" alt="">
                 <h2 class="h-secondary center">Furniture Ordering</h2>
                 <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam
+                    minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
                     sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
                     voluptas beatae facilis labore, omnis sint quae eum.</p>
             </div>
@@ -69,18 +69,18 @@ return false;
 
         </div>
         <script>
-            function first(){
-                document.getElementById("slideimage").src="img/bed.jpeg";
-            }    function second(){
-                document.getElementById("slideimage").src="img/sofa.jpeg";
-            }    function third(){
-                document.getElementById("slideimage").src="img/kitchen boxing.jpeg";
+            function first() {
+                document.getElementById("slideimage").src = "img/bed.jpeg";
+            } function second() {
+                document.getElementById("slideimage").src = "img/sofa.jpeg";
+            } function third() {
+                document.getElementById("slideimage").src = "img/kitchen boxing.jpeg";
             }
-                setInterval(first,4000);
-                setInterval(second,6000);
-                setInterval(third,8000);
+            setInterval(first, 4000);
+            setInterval(second, 6000);
+            setInterval(third, 8000);
 
-            
+
         </script>
 
     </section>
@@ -93,7 +93,7 @@ return false;
             <div class="client-item">
                 <img src="img/logo2.png" alt="Our Client">
             </div>
-          
+
             <div class="client-item">
                 <img src="img/logo4.png" alt="Our Client">
             </div>
@@ -107,13 +107,13 @@ return false;
     <section id="contact">
         <h1 class="h-primary center">Contact Us</h1>
         <div id="contact-box">
-            <form action="https://sheetdb.io/api/v1/0fwwef6lu2yv6" method="post" id="sheetdb-form" 
-            name="myForm" onsubmit="return f1 ()" onsubmit="return f2()">
+            <form action="https://sheetdb.io/api/v1/0fwwef6lu2yv6" method="post" id="sheetdb-form" name="myForm"
+                onsubmit="return f1 ()" onsubmit="return f2()">
                 <div class="form-group">
                     <label for="name">Name </label>
                     <input type="text" name="Name" id="name" placeholder="Enter your name">
                 </div>
-                
+
                 <div class="form-group">
                     <label for="email">Email </label>
                     <input type="email" name="Email" id="email" placeholder="Enter your email">
@@ -126,19 +126,19 @@ return false;
                     <label for="name">ID </label>
                     <input type="text" name="ID" id="name" placeholder="Ente Order id">
                 </div>
-            
+
                 <div class="form-group">
                     <h1 style="text-align: center;">
-                        <input type="submit"value="submit">  
-                        
+                        <input type="submit" value="submit">
+
                     </h1>
-                   
+
                 </div>
             </form>
         </div>
-     
+
     </section>
-   
+
 
     <footer>
         <div class="center">

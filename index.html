@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
     <title>Document</title>
     <link rel="stylesheet" href="styleeee.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" media="screen and (max-width: 1250px)" href="phone2.css">
 
 </head>
 
@@ -40,12 +43,14 @@
                 text-align: center;
                 padding-top: 30px;
             }
-            marquee{
+
+            marquee {
                 background-color: black;
                 color: white;
-            
 
-}
+
+            }
+
             .header {
                 background-color: #eb4d4b;
                 width: 100%;
@@ -60,6 +65,14 @@
                 padding: 10px 50px;
             }
 
+            a:hover {
+
+                box-shadow: 0 0 10px #ffffff, 0 0 40px #ffffff, 0 0 10px #ffffff, 0 0 40px #ffffff;
+                color: white;
+                text-shadow: 2px 2px 8px white;
+
+            }
+
             #sidebarMenu {
                 height: 100%;
                 position: fixed;
@@ -69,12 +82,9 @@
                 margin-top: 60px;
                 transform: translateX(-250px);
                 transition: transform 250ms ease-in-out;
-                background: black;
+                background: rgb(17, 10, 10);
             }
 
-            a:hover {
-                color: white;
-            }
 
             .menu {
 
@@ -143,13 +153,13 @@
     </head>
 
     <body>
-     
+
         <div class="header">
-            
+
         </div>
         <input type="checkbox" id="openSidebarMenu">
         <label for="openSidebarMenu" class="sidebarIconToggle">
-            
+
             <div class="spinner top"></div>
             <div class="spinner middle"></div>
             <div class="spinner bottom"></div>
@@ -162,8 +172,8 @@
                 <li><a href="whatsapp_tool.html">WhatsApp Tool</a></li>
                 <li><a href="cal.html">scientific calculator</a></li>
 
-               
-                
+
+
             </ul>
         </div>
         <div class="main">
@@ -177,7 +187,7 @@
             <section id="services-container">
                 <h1 class="h-primary center">About My Self</h1>
                 <div id="services">
-                   
+
 
                     <div class="box">
                         <img src="imgg/6 (1).jpg" alt="">
@@ -231,7 +241,7 @@
                     } function third() {
                         document.getElementById("slideimage").src = "imgg/3..jpg";
                     }
-                    
+
                     setInterval(first, 4000);
                     setInterval(second, 6000);
                     setInterval(third, 8000);
@@ -240,7 +250,15 @@
                 </script>
 
             </section>
-           
+            <footer>
+                <div class="center">
+                    Copyright &copy; www.nj.com. All rights reserved!
+
+
+
+                </div>
+            </footer>
+
     </body>
 
     </html>
