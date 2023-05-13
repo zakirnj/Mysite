@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="front">TUCH ME</div>
+        <div class="back">ZAKIR</div>
+        <div class="top">LOVE</div>
+        <div class="bottom">INAYA</div>
+        <div class="left"> ZAKIR</div>
+        <div class="right">INAYA</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<style>
+body{
+  background-color: black ;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 8s;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: rotateX(360deg) rotateY(360deg);
+}
+
+
+
+.top,
+
+.left
+ {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 30px;
+
+
+}
+
+.bottom {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(132, 23, 204);
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 30px;
+
+}
+.right {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(43, 216, 28);
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 30px;
+}
+.front {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(224, 20, 180);
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 30px;
+  
+}
+.back {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(10, 239, 255);
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 30px;
+
+}
+
+.front {
+  transform: translateZ(100px);
+  color: blueviolet;
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.top {
+  transform: translateY(-100px) rotateX(90deg);
+}
+
+.bottom {
+  transform: translateY(100px) rotateX(-90deg);
+}
+
+.left {
+  transform: translateX(-100px) rotateY(-90deg);
+}
+
+.right {
+  transform: translateX(100px) rotateY(90deg);
+}
+
+</style>

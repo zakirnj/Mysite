@@ -1,0 +1,119 @@
+<html>  
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="this is zakir website">
+        <meta name="keywords" content="zakir,gdc baramulla whats app group">
+        <meta http-equiv="refresh" content="3000">
+
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" media="screen and (max-width: 1250px)" href="phone2.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       </head>
+<body>
+    <section id="cintainer">
+
+        <!--navigation bar starts here -->
+        <nav class="nav-bar">
+            <span>Aaslamualykum..!</span>
+            <span><i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+            <span>Hi..!</span>
+        </nav>
+        <!--navigation ends starts here -->
+        <!--dynamic nav bar starts here-->
+        
+        <nav class="mini-nav-bar ">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#showSection">Slide Show</a></li>
+            </ul>
+        </nav>
+        <!--dynamic nav bar ends here-->
+        <!--slide bar code goes here-->
+        <div class="slide-bar">
+            <div>
+                <img src="photo3.jpg" alt="cannot display image">
+            </div>
+            <!-- <span>walikumasalimalikum..!</span> -->
+            <div>
+                <span> <a href="https://www.facebook.com/" target="__blank"><i class="fa fa-facebook-official" aria-hidden="true"></i>facebook</a> </span>
+                <span><a href="https://www.instagram.com/invites/contact/?i=bs7foy3pk7rn&utm_content=egtlyrc" target="zak.ir.77985741"><i class="fa fa-instagram" aria-hidden="true"></i>instagram</a></span>
+                <span><a href="https://wa.me/+91 7051483299" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i>whatsapp</a></span>
+                <span><a href="https://twitter.com/home?lang=en" target="__blank"><i class="fa fa-twitter" aria-hidden="true"></i>twitter  </a></span>
+                
+            </div>
+            
+            
+            
+        </div>
+        
+        
+        <!--slide bar code ends here-->
+        
+        
+        <!--main content of code starts here-->
+        <div class="home-section">
+            <div class="home-text">
+                MR.  Z A K I R
+                
+            </div>
+            
+        </div>
+    </section>
+    <hr>
+        
+        <!--main content ends here -->
+        
+        <!-- about section code goes here-->
+        
+        <div class="about-section" id="aboutSection">
+            <div class="about-me">
+                <h1> About Me</h1>
+                <p class="about-me-info"> Hi! I am zakir, I am a talented, ambitious and hardworking individual, with
+                         developed skills of user interface designing and remote project management. Furthermore, I am 
+                         adept at handling multiple tasks on a daily basis competently and at working well under pressure. 
+                         A key strength is communication; building strong relationships with people in order to deliver 
+                         the best results. </p>
+                </div>
+        </div>
+ <div class="about-section" id="showSection">
+            <div class="about-me">
+                <h1>SLIDE SHOW</h1>
+                <div class="slideShow-container">
+                    
+    
+    
+                    <div class="images-display" >
+                        <img src="1.jpg" alt=" cannot display " id="1">
+                    </div> 
+                    
+                    <div  class="slide-nav">
+                        <script>
+                            function first(){
+                                document.getElementById("1").src="2.jpg";
+                            }    function second(){
+                                document.getElementById("1").src="3.jpg";
+                            }    function third(){
+                                document.getElementById("1").src="4.jpg";
+                            }
+                                setInterval(first,2000);
+                                setInterval(second,4000);
+                                setInterval(third,6000);
+                
+                            
+                        </script>
+                        
+                    </div>
+                </div>
+
+       
+
+        <!-------slide show section ends here-->
+
+
+    </body>
+    <script src="logic.js" ></script>
+</html>
