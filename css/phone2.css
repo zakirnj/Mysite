@@ -1,0 +1,254 @@
+
+body{
+    height:100vh;
+    /* background-color:  cornsilk;*/
+    background-image: linear-gradient(rgb(255, 251, 251),rgb(123, 124, 121)url(bg.jpg));
+}
+
+.nav-bar{
+    
+
+    font-weight: 600;
+    font-size: 0.5rem;
+    width: 100vw;
+    padding:1.5%;
+    padding-top:1%;
+    
+}
+
+
+
+
+/*   dynamic navigation bar starts here*/
+
+.mini-nav-bar{
+    
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 70px;
+     text-align: center;
+    
+}
+
+
+
+.mini-nav-bar ul li{
+
+    display: inline-block;
+    padding: 2px;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+/*   dynamic navigation bar ends  here*/
+
+.slide-bar{
+
+    height :47vh;
+    width: 90px;
+     top: 100px;
+
+}
+
+
+.slide-bar-hidden{
+
+
+    left:-200px;
+    
+    
+    
+    
+}
+
+
+.slide-bar span{
+
+    
+    padding: 10%;
+    
+    
+}
+
+.slide-bar div span a{
+    text-decoration: none;
+    color: white;
+}
+
+.slide-bar div span a i{
+
+    padding-right: 7%;
+}
+
+
+.slide-bar div span{
+
+   
+    padding: 7%;
+    padding-left: 15%;
+    font-weight: 600;
+    font-size: 0.6rem;
+    
+}
+
+.slide-bar div span:hover{
+
+    /*background-color:  #3498db;*/
+    background-image: linear-gradient(rgb(48, 124, 149),rgb(6, 6, 7));
+}
+
+
+
+
+.slide-bar div img{
+
+    padding: 2%;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.9;
+    margin-left: 20%;
+    margin: 15%;
+
+}
+
+.fa{
+
+    margin-left: 5%;
+    margin-right: 4%;
+    cursor:pointer;
+}
+
+/*   here goes css for  home section*/
+.home-section{
+
+
+    height: 100vh;
+    border: 0.5px solid black;
+    text-align: center;
+
+    
+}
+
+.home-text{
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: 28%;
+    color: #FFF ;
+    font-weight: 600;
+    padding: 2% 0% 2% 0%;
+    border-radius:  5px;
+    border: 2px solid white;
+   /* background-color:#2196f3;*/
+      
+}
+
+
+.home-text:hover{
+    
+    box-shadow: 0 0 10px #ffffff,0 0 40px #ffffff , 0 0 10px #ffffff,0 0 40px #ffffff;
+    color: white;
+    text-shadow: 2px 2px 8px white;
+
+}
+
+.lightbox{
+    border: 2px solid rgb(9, 9, 10);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(0,0,0,0.7);
+    width: 100vw;
+    height: 100vh;
+    visibility:hidden;
+}
+
+.lightboxx{
+    visibility: visible;
+}
+
+
+
+
+
+/*   home section ends here */
+
+
+
+
+/*------------------------------------------*/
+/*this is the start if about section of page*/
+.about-section{
+    height:70vh;
+   /* background-color:  cornsilk;*/
+   background-image: linear-gradient(rgb(255, 251, 251),rgb(123, 124, 121));
+    
+      border: 2px solid rgb(234, 155, 155);          
+}
+
+.about-me{
+    
+    margin: 10% 2% 1% 70px;
+    background-size: cover;
+    height:52vh; 
+       
+}
+
+
+.about-me h1{
+
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-top: 2%;
+    margin-left:5%;
+    padding: 1%;
+    background-color: #FFF;
+
+}
+
+
+
+.about-me-info  {
+    margin-top: 3%;
+    margin: 5%;
+    padding: 2%;
+    padding-top: 3%;
+    background-color: #FFF;
+    border: 1px solid palegreen;
+    line-height: 20px;
+    font-weight: 520;
+    border-radius: 5px;
+}
+
+
+
+.slideShow-container{
+
+    
+    border: 4px solid black;
+    border-radius: 5px;
+    width: 90%;
+    height: 300px;
+     margin: auto;
+    overflow: hidden;
+}
+
+.images-display{
+
+    display: block;
+   
+    /*flex-direction: column;*/
+    
+}
+
