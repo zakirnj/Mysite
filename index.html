@@ -4,140 +4,246 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background: url(bg7.jpg)no-repeat center center/cover;
-            
-        }
+    <link rel="stylesheet" href="styleeee.css">
 
-        .photo {
-            border-radius: 100px;
-            width: 100px;
-            height: 100px;
-            margin: auto;
-
-        }
-
-        .nav-bar {
-            background-color: rgb(19, 19, 27);
-            font-size: 50px;
-            opacity: 0.9;
-            color: white;
-            box-shadow: 0 0 10px #ffffff, 0 0 40px #ffffff, 0 0 10px #ffffff, 0 0 40px #ffffff;
-            text-shadow: 2px 2px 8px white;
-        }
-
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .home-section {
-            border: 0.5px solid rgb(17, 15, 15);
-            text-align: center;
-        }
-
-        .home-text {
-            font-size: 3.5rem;
-           
-            margin: 10% 2% 2% 2%;
-            color: #FFF;
-            font-weight: 550;
-            padding: 1% 0% 2% 0%;
-            border-radius: 70px;
-            border: 8px solid white;
-           
-
-        }
-
-        .home-text:hover {
-
-            box-shadow: 0 0 10px #ffffff, 0 0 40px #ffffff, 0 0 10px #ffffff, 0 0 40px #ffffff;
-            color: white;
-            text-shadow: 2px 2px 8px white;
-
-        }
-
-        .box {
-
-            border: 4px solid rgb(212, 55, 55);
-            background-color: rgb(47, 29, 29);
-            text-align: center;
-            margin: 200px 100px;
-            padding: 20px;
-            height:50px ;
-            display: inline-block;
-            color: white;
-            transition: all 1s ease-in .5s;
-        }
-        .box:hover{
-           
-            background-color: rgb(9, 103, 211);
-            border-radius: 70px;
-            font-size:25px;
-            text-decoration: none;
-            box-shadow: 0 0 10px #ffffff, 0 0 40px #ffffff, 0 0 10px #ffffff, 0 0 40px #ffffff;
-            color: white;
-            text-shadow: 2px 2px 8px white;
-            border: 2px solid white;
-
-        }
-
-        a {
-            text-decoration: none;
-            font-size: 30px;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
-    <nav class="nav-bar">
 
-        <span><img class=photo src="photo3.jpg" alt=""></span>
+    <!DOCTYPE html>
+    <html>
 
-        <marquee> <span>Hi..! MY NAME IS ZAKIR YOUR ADMIN MY CONTACT NUMBER IS 7051483299 if you have any problem
-                contact me</span></marquee>
-    </nav>
-    <div class="container">
+    <head>
+        <meta charset="UTF-8">
 
-        <div class="box">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
 
-            <a href="index1.html">1</a>
+            html,
+            body {
+                overflow-x: hidden;
+                height: 100%;
+            }
+
+            body {
+                font-family: 'Varela Round', sans-serif;
+                background: #fff;
+                padding: 0;
+                margin: 0;
+            }
+
+            h1 {
+                text-align: center;
+                padding-top: 30px;
+            }
+            marquee{
+                background-color: black;
+                color: white;
+            
+
+}
+            .header {
+                background-color: #eb4d4b;
+                width: 100%;
+                height: 60px;
+                position: fixed;
+                z-index: 10;
+            }
+
+            .main {
+                height: 100%;
+                margin-top: 60px;
+                padding: 10px 50px;
+            }
+
+            #sidebarMenu {
+                height: 100%;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 250px;
+                margin-top: 60px;
+                transform: translateX(-250px);
+                transition: transform 250ms ease-in-out;
+                background: black;
+            }
+
+            a:hover {
+                color: white;
+            }
+
+            .menu {
+
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu li {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+            }
+
+            .menu li a {
+                color: #fff;
+                display: block;
+                padding: 20px;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            #openSidebarMenu:checked~#sidebarMenu {
+                transform: translateX(0);
+            }
+
+            input#openSidebarMenu {
+                display: none;
+            }
+
+            .sidebarIconToggle {
+                height: 22px;
+                width: 22px;
+                position: absolute;
+                z-index: 99;
+                top: 22px;
+                left: 15px;
+                transition: all 0.3s;
+                cursor: pointer;
+            }
+
+            .spinner {
+                height: 3px;
+                background-color: rgb(28, 23, 133);
+                transition: all 0.3s;
+            }
+
+            .spinner.middle,
+            .spinner.bottom {
+                margin-top: 3px;
+            }
+
+            #openSidebarMenu:checked~.sidebarIconToggle>.spinner.middle {
+                opacity: 0;
+            }
+
+            #openSidebarMenu:checked~.sidebarIconToggle>.spinner.top {
+                transform: rotate(135deg);
+                margin-top: 8px;
+            }
+
+            #openSidebarMenu:checked~.sidebarIconToggle>.spinner.bottom {
+                transform: rotate(-135deg);
+                margin-top: -9px;
+            }
+        </style>
+    </head>
+
+    <body>
+     
+        <div class="header">
+            
         </div>
-        <div class="box">
-            <a href="index3.html">2</a>
-        </div><br><br>
-        <div class="box">
+        <input type="checkbox" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            
+            <div class="spinner top"></div>
+            <div class="spinner middle"></div>
+            <div class="spinner bottom"></div>
+        </label>
+        <div id="sidebarMenu">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="index1.html">web pag1</a></li>
+                <li><a href="index3.html">web pag2</a></li>
+                <li><a href="whatsapp_tool.html">WhatsApp Tool</a></li>
+                <li><a href="cal.html">scientific calculator</a></li>
 
-            <a href="cal.html">Calculator</a>
+               
+                
+            </ul>
         </div>
-        <div class="box">
+        <div class="main">
+            <section id="home">
+                <h1 class="h-primary">Mr. ZAKIR AHMAD NAJAR</h1>
 
-            <a href="whatsapp_tool.html">Whatsapp</a>
-        </div>
-    </div>
-    <div class="home-section">
-        <div class="home-text">
-            <a href="https://chat.whatsapp.com/EXsCqC7NqlH1I53imPidL4">Click me for join whatsapp group 1</a>
-        </div>
-        <div class="home-section">
-            <div class="home-text">
-                <a href="https://chat.whatsapp.com/ITeVOdBJXNJEwHI41qP7l1">Click me for join whatsapp group 2</a>
-            </div>
 
-            <div class="home-section">
-                <div class="home-text">
-                    <a href="https://chat.whatsapp.com/L8jwcidCbgQ1o134wUzUFm">Click me for join whatsapp group 3</a>
+
+            </section>
+
+            <section id="services-container">
+                <h1 class="h-primary center">About My Self</h1>
+                <div id="services">
+                   
+
+                    <div class="box">
+                        <img src="imgg/6 (1).jpg" alt="">
+                        <h2 class="h-secondary center">HELLOW</h2>
+                        <p class="center">Meet Zakir Ahmad Najar, a skilled web developer who has carved a name for
+                            himself in the dynamic world of web development. With a passion for crafting engaging and
+                            functional online experiences, Zakir has become a sought-after professional in his field.
+
+                            As a web developer, Zakir possesses a deep understanding of various programming languages
+                            and frameworks. He leverages his technical expertise to bring ideas to life and create
+                            user-friendly websites that leave a lasting impact. From front-end development using HTML,
+                            CSS, and JavaScript to back-end programming with languages like PHP or Python, Zakir
+                            possesses a versatile skill set that enables him to tackle diverse projects.
+
+                            Zakir's attention to detail and ability to translate complex concepts into simple and
+                            intuitive interfaces set him apart from his peers. He is a natural problem solver,
+                            constantly seeking innovative solutions to overcome challenges and deliver exceptional
+                            results. Whether it's designing responsive layouts, optimizing website performance, or
+                            implementing secure authentication systems, Zakir is committed to delivering high-quality
+                            web applications that exceed client expectations.
+
+                            Beyond technical prowess, Zakir understands the importance of collaboration and effective
+                            communication. He actively engages with clients and stakeholders to comprehend their vision,
+                            requirements, and goals. By fostering open dialogue and maintaining a client-centric
+                            approach, Zakir ensures that his web development projects align with the client's objectives
+                            and meet their unique needs.
+
+                            Zakir Ahmad Najar is not only a dedicated professional but also someone who stays abreast of
+                            the latest trends and advancements in web development. He regularly hones his skills by
+                            exploring new tools, frameworks, and best practices, enabling him to stay ahead of the curve
+                            and offer cutting-edge solutions to his clients.
+
+                            With an impressive portfolio showcasing his expertise and a proven track record of
+                            successful projects, Zakir Ahmad Najar has established himself as a web developer who brings
+                            creativity, technical proficiency, and a client-focused approach to every endeavor. His
+                            passion for web development and his commitment to excellence make him an invaluable asset in
+                            the digital landscape.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="slide">
+                <div class="box">
+                    <img src="imgg/6 (1).jpg" id="slideimage">
 
                 </div>
+                <script>
+                    function first() {
+                        document.getElementById("slideimage").src = "imgg/1.jpg";
+                    } function second() {
+                        document.getElementById("slideimage").src = "imgg/7.jpg";
+                    } function third() {
+                        document.getElementById("slideimage").src = "imgg/3..jpg";
+                    }
+                    
+                    setInterval(first, 4000);
+                    setInterval(second, 6000);
+                    setInterval(third, 8000);
+
+
+                </script>
+
+            </section>
+           
+    </body>
+
+    </html>
 </body>
 
 </html>
